@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>htmlのsample</title>
+  <style>
+    .container {
+      display: flex;
+      /*
+      並ぶ向きを flex-directionで変更する
+       */
+      flex-direction: row;
+      /*
+      小要素の折り返しポリシーを設定する flex-wrap
+       */
+      flex-wrap: nowrap;
+      /*
+      親要素に空きスペースがあった場合の小要素の配置ポリシーを justify-contentで設定する
+       */
+      justify-content: space-between;
+
+    }
+    .item {
+      background: #0bd;
+      color: #fff;
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
+</body>
+</html>
